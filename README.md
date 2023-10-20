@@ -1,32 +1,36 @@
-# App Android Copa 2022
+# 📱 App Android Copa do Mundo 2022 ⚽🏆
 
-## API
+Projeto de Criação de um App Android que notifica o usuário do início das partidas dos jogos da Copa de 2022.
 
-Para facilitar a dinâmica de integração do nosso App, criamos uma Pseudo-API usando o GitHub Pages, a qual está disponível na seguinte URL: https://digitalinnovationone.github.io/copa-2022-android/api.json
+## ✅Objetivos:
+***Criar os casos de uso para as seguintes funcionalidades:***
 
-## Desafio de Projeto (Lab) 😎
+* *Buscar Partidas -> GetMatchesUseCase.kt;*
+* *Habilitar Notificação -> EnableNotificationUseCase.kt;*
+* *Desabilitar Notificação -> DisableNotificationUseCase.kt;*
+* *Criar o MainViewModel.kt para orquestrar as interações com a MainActivity.kt*
+* *Criar a MainScreen.kt para criar a UI por meio do Jetpack Compose*
+* *Integrar o ViewModel e Activity, através da observação de estados*
+* *Criar o Work Manager para orquestrar as Notificações Push localmente*
 
-1. :white_check_mark: Explore o projeto base e entenda seus módulos e responsabilidades:
-    * **app**: Contém as classes de nível de aplicativo e scaffolding que vinculam o restante da base de código.O módulo "app" depende de todos os módulos de recursos e módulos principais necessários;
-    * **data**: abstração para o acesso à fontes de dados, organizada da seguinte forma:
-        * ***data***: Neste módulo são declarados os DataSources "remote" e "local", bem como a implementação dos repositórios de acordo com a lógica de negócio necessária;
-        * ***local***: Contém uma implementação do [Room](https://developer.android.com/training/data-storage/room) como fonte de dados local;
-        * ***remote***: Implementação de uma fonte de dados remota usando o [Retrofit](https://square.github.io/retrofit/) como client HTTP.
-    * **domain**: Neste módulo são declarados os casos de uso (funcionalidades) da aplicação;
-    * **notification-scheduler**: Módulo específico para a criação das Notificações via Work Manager.
-2. :white_large_square: Criar os casos de uso para as seguintes funcionalidades:
-    * Buscar Partidas: `GetMatchesUseCase.kt`;
-    * Habilitar Notificação: `EnableNotificationUseCase.kt`;
-    * Desabilitar Notificação: `DisableNotificationUseCase.kt`.
-3. :white_large_square: Criar o `MainViewModel.kt` para orquestrar as interações com a `MainActivity.kt`;
-4. :white_large_square: Criar a `MainScreen.kt` para criar a UI por meio do Jetpack Compose;
-5. :white_large_square: Integrar o ViewModel e Activity, através da observação de estados;
-6. :white_large_square: Por fim, criar o Work Manager para orquestrar as Notificações Push localmente.
+## 📸 Screenshots
 
-## Materia/Live de Apoio
+![Screenshot_appCopa11](https://github.com/jessieFerrS/copa-2022-android/assets/114115950/34afce8d-1c42-4460-a994-b3ca6e3b20e2)
+![Screenshot_appCopa22](https://github.com/jessieFerrS/copa-2022-android/assets/114115950/b343e321-91da-4818-b5cd-422e4d01e73e)
 
-Todos esses TODOs foram realizados nesta live incrível, com a participação de [pedrox-hs](https://github.com/pedrox-hs), [EzequielMessore](https://github.com/EzequielMessore), [igorbag](https://github.com/igorbag) e [falvojr](https://github.com/falvojr). Segue a gente aqui no GitHub e no LinkedIn 😉 
+## 💻 Tecnologias Utilizadas
+* Linguagem Kotlin
+* Android Studio
 
-**[Android Mobile Week #2: Aprenda a Criar um App com Listagem e Notificações dos Jogos do Brasil na Copa](https://youtu.be/30ZiJmCWliI)**
+## 📖 Materiais de Apoio
+### 📘 Documentação
+* **Hilt:**
+https://dagger.dev/hilt/android-entry-point
+* **JetPack Compose:** 
+https://developer.android.com/jetpack/compose/documentation?hl=pt-br
+* **WorkManager:** 
+https://developer.android.com/topic/libraries/architecture/workmanager/basics?hl=pt-br
 
-Bons estudos galera 😘
+### ![api (2)](https://github.com/jessieFerrS/copa-2022-android/assets/114115950/40902873-da29-4ba6-9c2b-662d4349d6ab) API
+
+https://digitalinnovationone.github.io/copa-2022-android/api.json
